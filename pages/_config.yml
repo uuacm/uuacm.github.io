@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: U of U ACM
+title: UofU ACM
 email: uofuacm@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  ACM (Association for Computing Machinery) club at the University of Utah.
+  Website for ACM (Association for Computing Machinery) club at the University of Utah.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://uuacm.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: uuacm
