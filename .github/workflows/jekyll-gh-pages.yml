@@ -45,7 +45,6 @@ jobs:
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: |
-          cd pages
           bundle install
           bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
@@ -54,7 +53,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           name: github-pages
-          path: pages/_site/  # Adjust the path to point to the _site directory within the pages directory
+          path: _site/
           retention-days: 1
         env:
           GITHUB_PAGES: true
