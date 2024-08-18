@@ -159,7 +159,7 @@ footer a {
 }
 
 .event-box {
-  width: calc(100px + 5vw);
+  width: calc(150px + 5vw);
   background: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
   padding: calc(10px + 1vw);
@@ -219,7 +219,7 @@ footer a {
 .member-box,
 .sigs-box,
 .resource-box {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   padding: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
