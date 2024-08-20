@@ -70,7 +70,8 @@ footer a:hover::after {
   background: url('../media/logoBackground.svg') no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
-  height: calc(40% + 20vw);;
+  height: calc(40% + 20vw);
+  ;
   width: 100%;
 }
 
@@ -183,10 +184,16 @@ footer a {
   font-size: calc(8px + 0.5vw);
 }
 
+.event-box p:last-of-type {
+  margin-bottom: calc(15px + 1vw);
+}
+
 .event-box .learn-more {
   margin: calc(10px + 1vw);
   padding: calc(5px + 0.5vw);
   background-color: #cc0000;
+  text-decoration: none;
+  font-size: calc(12px + 0.25vw);
   color: white;
   border: none;
   border-radius: 5px;
@@ -216,7 +223,34 @@ footer a {
   margin: 0 auto;
 }
 
-.member-box,
+.member-box p:last-of-type {
+  margin-bottom: calc(15px + 1vw);
+}
+
+.member-box {
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.2s, background 0.3s;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+
+.member-box:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.member-image {
+  max-width: 200px;
+  width: 100%;
+  border-radius: 10px;
+}
+
 .sigs-box,
 .resource-box {
   background: rgba(255, 255, 255, 0.8);
@@ -227,18 +261,33 @@ footer a {
   transition: transform 0.2s, background 0.3s;
 }
 
-.member-box:hover,
 .sigs-box:hover,
 .resource-box:hover {
   transform: translateY(-3px);
   background: rgba(255, 255, 255, 0.8);
 }
 
-.member-image,
 .sigs-box img,
 .resource-box img {
   max-width: 100%;
   border-radius: 10px;
+}
+
+.member-box .learn-more {
+  margin: calc(10px + 0.5vw);
+  padding: calc(5px + 0.5vw);
+  background-color: #cc0000;
+  text-decoration: none;
+  font-size: calc(12px + 0.25vw);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.member-box .learn-more:hover {
+  background-color: #a30000;
+  transform: translateY(-3px);
 }
 
 .sponsor-logos {
